@@ -7,7 +7,6 @@ module.exports = async function (username, password) {
     prefixUrl: 'http://quanyi.hxjx360.com',
     cookieJar: new CookieJar()
   });
-  console.log(password +'密码')
   const response = await instance.post('api/login2', {
     searchParams: {
       username,
